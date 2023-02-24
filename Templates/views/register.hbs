@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Task-App-Login</title>
+</head>
+
+<body>
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-8 col-12 mx-auto">
+                        <div class="box text-center">
+                            <img src="/images/task-list_2.png" alt="Task-App-Image" style="height:100px">
+                            <h1>Welcome to Task-App</h1>
+                            <div class="row form-styles">
+                                <div class="col-md-10 col-12 mx-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h1 class="text-center mb-2">Signup</h1>
+                                            <form id="regForm" enctype="multipart/form-data">
+                                                <div class="form-group mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Name
+                                                    </label>
+                                                    <input type="text" class="form-control" aria-describedby="emailHelp"
+                                                        placeholder="John Doe" name="name" id="username">
+                                                    <h3 id="name-error"></h3>
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label for="exampleInputEmail1" class="form-label">Email
+                                                        address</label>
+                                                    <input type="email" class="form-control" id="email"
+                                                        aria-describedby="emailHelp"
+                                                        placeholder="eg:- johndoe69@abc.com" name="email">
+                                                    <h3 id="email-error"></h3>
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <label for="exampleInputPassword1"
+                                                        class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="password"
+                                                        name="password">
+                                                    <h3 id="password-error"></h3>
+                                                </div>
+                                                <div class="form-group mb-3">
+
+                                                    <label for="formFile" class="form-label">Upload your
+                                                        avatar</label>
+                                                    <input class="form-control" type="file" id="formFile" name="avatar"
+                                                        accept="image/*">
+                                                    <h3 id="image-error"></h3>
+                                                </div>
+                                                <button type="submit" class="btn-style btn-primary">Submit</button>
+                                            </form>
+                                            <p class="mt-4">Already have an Account? <a href="/users/login">Signin</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.2.2/dist/axios.min.js"></script>
+    <script src="/js/user-signup.js"></script>
+</body>
+
+</html>
